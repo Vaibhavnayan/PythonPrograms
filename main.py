@@ -362,3 +362,19 @@ string1= string.ascii_lowercase
 string2=random.choice(string1)
 print(string2)
 
+#file read and write
+import test
+
+print(test.printing())
+
+file1= open("Content.txt","r")
+
+print(file1.read())
+
+file1.close()
+
+
+
+
+
+
