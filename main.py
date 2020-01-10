@@ -363,6 +363,7 @@ string2=random.choice(string1)
 print(string2)
 
 #file read and write
+'''
 import test
 
 print(test.printing())
@@ -391,3 +392,12 @@ def test(mcq):
   print("Your score is: " + str(score))
 
 test(mcq)
+'''
+
+# class functions
+from test import test
+
+student1= test("Vaibhav", 10)
+student2= test("Nayan", 5)
+
+print(student2.checkGPA())
