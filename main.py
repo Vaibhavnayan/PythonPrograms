@@ -374,7 +374,20 @@ print(file1.read())
 file1.close()
 
 
+#MCQ
+from Question import Question
 
+questions=["What color banana is?\n (a) Red (b) Yellow (c) Blue \n", "What color sky is?\n (a) Blue (b) Red (c) Pink\n"]
 
+mcq = [Question(questions[0], "b"),
+Question(questions[1], "a")]
 
+def test(mcq):
+  score = 0
+  for question in mcq:
+    ans= input(question.ques)
+    if ans == question.ans:
+      score +=1      
+  print("Your score is: " + str(score))
 
+test(mcq)
